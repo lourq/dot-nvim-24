@@ -4,10 +4,14 @@ vim.g.mapleader = " "
 
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-keymap.set("v", "J", ":m '>+6<CR>gv=gv")
-keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+keymap.set("v", "J", ":m '>+26<CR>gv=gv")
+keymap.set("v", "K", ":m '<18<CR>gv=gv")
 
-keymap.set("n", "<C-a>", "gg<S-v>G")
+vim.keymap.set("n", "J", "mzJ`z")
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
 
 keymap.set("n", "ss", ":split<Return>", opts)
 keymap.set("n", "sv", ":vsplit<Return>", opts)
