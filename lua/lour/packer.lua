@@ -8,11 +8,12 @@ return require('packer').startup(function(use)
 
   	requires = { {'nvim-lua/plenary.nvim'} }
   }
+
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
+	  'Mofiqul/dracula.nvim',
+	  as = 'dracule',
 	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+		  vim.cmd('colorscheme dracula')
 	  end
   })
 
@@ -44,5 +45,11 @@ return require('packer').startup(function(use)
 		  {'rafamadriz/friendly-snippets'},
 	  }
   }
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+    end
+}
+use ('goolord/alpha-nvim')
 end)
 
