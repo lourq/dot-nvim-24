@@ -9,14 +9,21 @@ return require('packer').startup(function(use)
   	requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- use({
+	 --  'Mofiqul/dracula.nvim',
+	 --  as = 'dracule',
+	 --  config = function()
+		--   vim.cmd('colorscheme dracula')
+	 --  end
+  -- })
+
   use({
-	  'Mofiqul/dracula.nvim',
-	  as = 'dracule',
+	  'felipeagc/fleet-theme-nvim',
+	  as = 'fleet',
 	  config = function()
-		  vim.cmd('colorscheme dracula')
+		  vim.cmd('colorscheme fleet')
 	  end
   })
-
   use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
   use ('nvim-treesitter/playground')
   use ("nvim-treesitter/nvim-treesitter-context");
@@ -51,7 +58,12 @@ return require('packer').startup(function(use)
     end
 }
 use ('goolord/alpha-nvim')
-use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+use ('akinsho/bufferline.nvim')
+use ('windwp/nvim-autopairs')
+use ('norcalli/nvim-colorizer.lua')
+use ('lewis6991/gitsigns.nvim')
+use ('windwp/nvim-ts-autotag')
+use ('lukas-reineke/indent-blankline.nvim')
 
 end)
 

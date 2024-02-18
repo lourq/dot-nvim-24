@@ -1,5 +1,5 @@
 function rmBackground(color)
-    color = color or 'dracula'
+    color = color or 'fleet'
     vim.cmd.colorscheme(color)
 
     for _, group in pairs(vim.fn.getcompletion('', 'highlight')) do
