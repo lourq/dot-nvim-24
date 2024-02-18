@@ -51,5 +51,7 @@ return require('packer').startup(function(use)
     end
 }
 use ('goolord/alpha-nvim')
+use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
+
 end)
 
