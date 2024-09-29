@@ -9,13 +9,17 @@ return require('packer').startup(function(use)
     requires = { {'nvim-lua/plenary.nvim'} }
    }
 
+   -- Color schemes block
    use({
     'felipeagc/fleet-theme-nvim',
     as = 'fleet',
-    config = function()
-      vim.cmd('colorscheme fleet')
-    end
+    -- config = function()
+      -- vim.cmd('colorscheme fleet')
+    -- end
    })
+   use ('aditya-azad/candle-grey')
+   use ('nikolvs/vim-sunbather')
+   -- 
    use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
    use ('nvim-treesitter/playground')
    use ("nvim-treesitter/nvim-treesitter-context");
