@@ -17,7 +17,6 @@ return require('packer').startup(function(use)
       -- vim.cmd('colorscheme fleet')
     -- end
    })
-   use ('aditya-azad/candle-grey')
    use ('nikolvs/vim-sunbather')
    -- 
    use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
@@ -53,7 +52,7 @@ return require('packer').startup(function(use)
     config = function()
     end
 }
-use ('goolord/alpha-nvim')
+-- use ('goolord/alpha-nvim')
 use ('akinsho/bufferline.nvim')
 use ('windwp/nvim-autopairs')
 use ('norcalli/nvim-colorizer.lua')
