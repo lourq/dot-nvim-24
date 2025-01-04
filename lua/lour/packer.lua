@@ -61,10 +61,7 @@ use ('windwp/nvim-ts-autotag')
 use ('lukas-reineke/indent-blankline.nvim')
 use ('folke/todo-comments.nvim')
 
-
-use({ "epwalsh/obsidian.nvim",
-  tag = "*",
-  requires =  {"nvim-lua/plenary.nvim"} })
+use { "iamcco/markdown-preview.nvim", run = "cd app && npm install" }
 
 end)
 

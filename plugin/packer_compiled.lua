@@ -140,6 +140,11 @@ _G.packer_plugins = {
     path = "/Users/lour/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
   },
+  ["markdown-preview.nvim"] = {
+    loaded = true,
+    path = "/Users/lour/.local/share/nvim/site/pack/packer/start/markdown-preview.nvim",
+    url = "https://github.com/iamcco/markdown-preview.nvim"
+  },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/Users/lour/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -184,11 +189,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/lour/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
-  },
-  ["obsidian.nvim"] = {
-    loaded = true,
-    path = "/Users/lour/.local/share/nvim/site/pack/packer/start/obsidian.nvim",
-    url = "https://github.com/epwalsh/obsidian.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
