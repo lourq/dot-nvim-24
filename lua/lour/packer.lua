@@ -64,4 +64,3 @@ use ('folke/todo-comments.nvim')
 use { "iamcco/markdown-preview.nvim", run = "cd app && npm install" }
 
 end)
-
