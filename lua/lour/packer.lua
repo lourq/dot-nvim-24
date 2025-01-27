@@ -10,14 +10,8 @@ return require('packer').startup(function(use)
    }
 
    -- Color schemes block
-   use({
-    'felipeagc/fleet-theme-nvim',
-    as = 'fleet',
-    -- config = function()
-      -- vim.cmd('colorscheme fleet')
-    -- end
-   })
    use ('nikolvs/vim-sunbather')
+
    -- 
    use ('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
    use ('nvim-treesitter/playground')
@@ -51,16 +45,16 @@ return require('packer').startup(function(use)
     'numToStr/Comment.nvim',
     config = function()
     end
-}
--- use ('goolord/alpha-nvim')
-use ('akinsho/bufferline.nvim')
-use ('windwp/nvim-autopairs')
-use ('norcalli/nvim-colorizer.lua')
-use ('lewis6991/gitsigns.nvim')
-use ('windwp/nvim-ts-autotag')
-use ('lukas-reineke/indent-blankline.nvim')
-use ('folke/todo-comments.nvim')
+  }
+  use ('akinsho/bufferline.nvim')
+  use ('windwp/nvim-autopairs')
+  use ('norcalli/nvim-colorizer.lua')
+  use ('lewis6991/gitsigns.nvim')
+  use ('windwp/nvim-ts-autotag')
+  use ('lukas-reineke/indent-blankline.nvim')
+  use ('folke/todo-comments.nvim')
 
-use { "iamcco/markdown-preview.nvim", run = "cd app && npm install" }
+  use { "epwalsh/obsidian.nvim" }
+  use { "nvim-tree/nvim-tree.lua" }
 
 end)
